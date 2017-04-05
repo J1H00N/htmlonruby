@@ -5,7 +5,7 @@
 
         <div class="header-left clearfix">
           <div class="logo">
-            <a href="#banner"><img src="img/logo.png" alt="logo"></a>
+            <a href="#banner"><img src="assets/logo.png" alt="logo"></a>
           </div>      
         </div>
 
@@ -45,7 +45,7 @@
 
 <div class="banner">
     <div class="banner-image">
-        <img src="bannerimage.png">
+        <img src="assets/bannerimage.png">
     </div>
     
     <div class="banner-caption">
@@ -74,7 +74,7 @@
 				<div class="space"></div>
 				<div class="row">
 					<div class="col-md-6">
-						<img src="img/me.jpg" alt="myface">
+						<img src="assets/me.jpg" alt="myface">
 						<div class="space"></div>
 					</div>
 					<div class="col-md-6">
@@ -84,15 +84,15 @@
 						<p>
 							처음 다루어보는 html과 css를 가지고 자기소개페이지를 만들어보고 있습니다. 정말 어렵고 html의 구조를 설계할때부터 css를 함께 만들어가야 한다는 것을 알았습니다. 아직은 초보지만 구조를 이해하려고 노력하고 있고 나중에는 좀 더 수월하게 페이지를 만들 수 있도록 하겠습니다.
 						</p>
-						<ul class="list-unstyled">
-							<li>이름은? <%= @HTMLName %></li>
-							<li>나이는? <%= @HTMLAge %></li>
-							<li>대학은? <%= @HTMLEducation %></li>
-            				<li>전공은? <%= @HTMLMajor %></li>
-            				<li>번호는? <%= @HTMLPhone %></li>
-							<li>이메일주소는? <%= @HTMLEmail %></li>
-            				<li>집주소는? <%= @HTMLAddress %></li>
-							<li>저는? <%= @HTMLDescription %></li>
+						<ul>
+							<li><%= "이름은? #{@HTMLName}" %></li>
+							<li><%= "나이는? #{@HTMLAge}" %></li>
+							<li><%= "대학은? #{@HTMLEducation}" %></li>
+            	<li><%= "전공은? #{@HTMLMajor}" %></li>
+            	<li><%= "전화번호는? #{@HTMLPhone}" %></li>
+							<li><%= "이메일주소는? #{@HTMLEmail}" %></li>
+            	<li><%= "집주소는? #{@HTMLAddress}" %></li>
+							<li><%= "저는? #{@HTMLDescription}" %></li>
 						</ul>
 					</div>
 				</div>
@@ -109,22 +109,22 @@
 		<div class="row">
 		<div class="col-xs-6 col-md-3">
 			<a href="#" class="thumbnail">
-  			<img src="learn.jpg" alt="learn">
+  			<img src="assets/learn.jpg" alt="learn">
 			</a>
 		</div>
 		<div class="col-xs-6 col-md-3">
 			<a href="#" class="thumbnail">
-  			<img src="pogi.jpg" alt="nopogi">
+  			<img src="assets/pogi.jpg" alt="nopogi">
 			</a>
 		</div>
 		<div class="col-xs-6 col-md-3">
 			<a href="#" class="thumbnail">
-  			<img src="chicken.jpg" alt="chicken">
+  			<img src="assets/chicken.jpg" alt="chicken">
 			</a>
 		</div>
 		<div class="col-xs-6 col-md-3">
 			<a href="#" class="thumbnail">
-  			<img src="snowboard.jpg" alt="snowboard">
+  			<img src="assets/snowboard.jpg" alt="snowboard">
 			</a>
 		</div>
 	</div>
